@@ -1,7 +1,9 @@
 // @flow
 
 import * as React from 'react';
+
 import PageWrapper from './components/PageWrapper.react';
+import Button from './components/Button.react';
 
 type Props = {||};
 
@@ -15,8 +17,7 @@ function Elements(props: Props): React.Node {
           <i>italic</i> and this is <em>emphasized</em>. This is{' '}
           <sup>superscript</sup> text and this is <sub>subscript</sub> text.
           This is <u>underlined</u> and this is code:{' '}
-          <code>for (;;) {'{ ... }'}</code>. Finally,{' '}
-          <a href="#">this is a link</a>.
+          <code>for (;;) {'{ ... }'}</code>. Finally, <a>this is a link</a>.
         </p>
         <hr />
         <p>
@@ -41,13 +42,13 @@ function Elements(props: Props): React.Node {
         <h3>Preformatted</h3>
         <pre>
           <code>
-            i = 0;
-            {'while (!deck.isInOrder()) {'}
-            {"print 'Iteration ' + i;"}
-            {'deck.shuffle();'}
-            {'i++;'}
-            {'}'}
-            print 'It took ' + i + ' iterations to sort the deck.';
+            {'i = 0;\n'}
+            {'while (!deck.isInOrder()) {\n'}
+            {"    print 'Iteration ' + i;\n"}
+            {'    deck.shuffle();\n'}
+            {'    i++;\n'}
+            {'}\n'}
+            {"print 'It took ' + i + ' iterations to sort the deck.';"}
           </code>
         </pre>
       </section>
@@ -82,44 +83,44 @@ function Elements(props: Props): React.Node {
             <h3>Icons</h3>
             <ul className="icons">
               <li>
-                <a href="#" className="icon style1 fa-twitter">
+                <a className="icon style1 fa-twitter">
                   <span className="label">Twitter</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="icon style1 fa-facebook">
+                <a className="icon style1 fa-facebook">
                   <span className="label">Facebook</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="icon style1 fa-instagram">
+                <a className="icon style1 fa-instagram">
                   <span className="label">Instagram</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="icon style1 fa-github">
+                <a className="icon style1 fa-github">
                   <span className="label">Github</span>
                 </a>
               </li>
             </ul>
             <ul className="icons">
               <li>
-                <a href="#" className="icon style2 fa-twitter">
+                <a className="icon style2 fa-twitter">
                   <span className="label">Twitter</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="icon style2 fa-facebook">
+                <a className="icon style2 fa-facebook">
                   <span className="label">Facebook</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="icon style2 fa-instagram">
+                <a className="icon style2 fa-instagram">
                   <span className="label">Instagram</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="icon style2 fa-github">
+                <a className="icon style2 fa-github">
                   <span className="label">Github</span>
                 </a>
               </li>
@@ -131,76 +132,52 @@ function Elements(props: Props): React.Node {
           <div className="6u 12u$(medium)">
             <ul className="actions">
               <li>
-                <a href="#" className="button special">
-                  Default
-                </a>
+                <Button isSpecial={true} text="Default" />
               </li>
               <li>
-                <a href="#" className="button">
-                  Default
-                </a>
+                <Button text="Default" />
               </li>
             </ul>
-            <ul className="actions small">
+            <ul className="actions">
               <li>
-                <a href="#" className="button special small">
-                  Small
-                </a>
+                <Button isSpecial={true} isSmall={true} text="Small" />
               </li>
               <li>
-                <a href="#" className="button small">
-                  Small
-                </a>
+                <Button isSmall={true} text="Small" />
               </li>
             </ul>
             <ul className="actions vertical">
               <li>
-                <a href="#" className="button special">
-                  Default
-                </a>
+                <Button isSpecial={true} text="Default" />
               </li>
               <li>
-                <a href="#" className="button">
-                  Default
-                </a>
+                <Button text="Default" />
               </li>
             </ul>
             <ul className="actions vertical small">
               <li>
-                <a href="#" className="button special small">
-                  Small
-                </a>
+                <a className="button special small">Small</a>
               </li>
               <li>
-                <a href="#" className="button small">
-                  Small
-                </a>
+                <a className="button small">Small</a>
               </li>
             </ul>
           </div>
           <div className="6u 12u$(medium)">
             <ul className="actions vertical">
               <li>
-                <a href="#" className="button special fit">
-                  Default
-                </a>
+                <Button isSpecial={true} isFullWidth={true} text="Default" />
               </li>
               <li>
-                <a href="#" className="button fit">
-                  Default
-                </a>
+                <a className="button fit">Default</a>
               </li>
             </ul>
             <ul className="actions vertical small">
               <li>
-                <a href="#" className="button special small fit">
-                  Small
-                </a>
+                <a className="button special small fit">Small</a>
               </li>
               <li>
-                <a href="#" className="button small fit">
-                  Small
-                </a>
+                <a className="button small fit">Small</a>
               </li>
             </ul>
           </div>
@@ -306,82 +283,54 @@ function Elements(props: Props): React.Node {
         <h3>Buttons</h3>
         <ul className="actions">
           <li>
-            <a href="#" className="button special">
-              Special
-            </a>
+            <a className="button special">Special</a>
           </li>
           <li>
-            <a href="#" className="button">
-              Default
-            </a>
+            <a className="button">Default</a>
           </li>
         </ul>
         <ul className="actions">
           <li>
-            <a href="#" className="button big">
-              Big
-            </a>
+            <a className="button big">Big</a>
           </li>
           <li>
-            <a href="#" className="button">
-              Default
-            </a>
+            <a className="button">Default</a>
           </li>
           <li>
-            <a href="#" className="button small">
-              Small
-            </a>
+            <a className="button small">Small</a>
           </li>
         </ul>
         <ul className="actions fit">
           <li>
-            <a href="#" className="button special fit">
-              Fit
-            </a>
+            <a className="button special fit">Fit</a>
           </li>
           <li>
-            <a href="#" className="button fit">
-              Fit
-            </a>
+            <a className="button fit">Fit</a>
           </li>
           <li>
-            <a href="#" className="button fit">
-              Fit
-            </a>
+            <a className="button fit">Fit</a>
           </li>
         </ul>
         <ul className="actions fit small">
           <li>
-            <a href="#" className="button special fit small">
-              Fit + Small
-            </a>
+            <a className="button special fit small">Fit + Small</a>
           </li>
           <li>
-            <a href="#" className="button fit small">
-              Fit + Small
-            </a>
+            <a className="button fit small">Fit + Small</a>
           </li>
           <li>
-            <a href="#" className="button fit small">
-              Fit + Small
-            </a>
+            <a className="button fit small">Fit + Small</a>
           </li>
         </ul>
         <ul className="actions">
           <li>
-            <a href="#" className="button special icon fa-download">
-              Icon
-            </a>
+            <a className="button special icon fa-download">Icon</a>
           </li>
           <li>
-            <a href="#" className="button icon fa-upload">
-              Icon
-            </a>
+            <a className="button icon fa-upload">Icon</a>
           </li>
           <li>
-            <a href="#" className="button icon fa-save">
-              Icon
-            </a>
+            <a className="button icon fa-save">Icon</a>
           </li>
         </ul>
         <ul className="actions">
