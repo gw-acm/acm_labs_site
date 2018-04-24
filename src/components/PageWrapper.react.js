@@ -3,13 +3,16 @@
 import * as React from 'react';
 
 import Menu from './Menu.react';
+import Footer from './Footer.react';
 
 type Props = {|
+  +title: string,
+  +subtitle?: string,
   +children: React.Node
 |};
 
 function PageWrapper(props: Props): React.Node {
-  const { children } = props;
+  const { children, subtitle, title } = props;
   return (
     <div id="wrapper">
       <header id="header">
@@ -30,7 +33,16 @@ function PageWrapper(props: Props): React.Node {
         </div>
       </header>
       <Menu />
-      {children}
+      <div id="main">
+        <div className="inner">
+          <header>
+            <h1>{title}</h1>
+            {subtitle && <p>{subtitle}</p>}
+          </header>
+          {children}
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
