@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import PageWrapper from './components/PageWrapper.react';
-import ProjectCard from './components/ProjectCard.react';
+import LinkCard from './components/LinkCard.react';
 
 type Props = {||};
 
@@ -31,17 +31,38 @@ function Index(props: Props): React.Node {
           <li>Win prizes from ACM</li>
         </ul>
       </div>
+      <div>
+        <strong>We have big things coming soon!</strong> Be on the lookout for
+        the following:
+        <br />
+        <br />
+        <ul>
+          <li>Open Source projects you can contribute to</li>
+          <li>
+            Project ideas for personal projects you can do on your own or with
+            friends to build your portfolio
+          </li>
+          <li>Tutorials and Resources</li>
+          <li>
+            A friendly competition from ACM with prizes for completing tutorials
+            and contributing to projects
+          </li>
+        </ul>
+      </div>
+      <div>
+        <strong>In the meantime, here are some basic guides:</strong>
+      </div>
       <section className="tiles">
-        <ProjectCard
-          title="Sample Project"
-          description="This project is really cool!"
-          link="/"
+        <LinkCard
+          title="Git and GitHub"
+          description="A ten minute guide to git-ting started with Git and GitHub"
+          link="https://guides.github.com/activities/hello-world/"
           color="red"
         />
-        <ProjectCard
-          title="Sample Project 2"
-          description="This project is even cooler!"
-          link="/"
+        <LinkCard
+          title="Free Developer Tools"
+          description="Simply use your student email to get access to tons of free and incredibly useful tools"
+          link="https://education.github.com/pack"
           color="blue"
         />
       </section>
