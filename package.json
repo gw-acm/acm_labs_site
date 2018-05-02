@@ -1,5 +1,6 @@
 {
   "name": "acm_labs_site",
+  "homepage": "http://acm.seas.gwu.edu/labs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
