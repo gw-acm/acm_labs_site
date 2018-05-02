@@ -9,7 +9,7 @@ type Props = {|
   color: 'red' | 'blue' | 'green' | 'magenta' | 'purple' | 'violet'
 |};
 
-function ProjectCard(props: Props): React.Node {
+function LinkCard(props: Props): React.Node {
   const colorMap = {
     red: 'style1',
     blue: 'style2',
@@ -35,4 +35,4 @@ function ProjectCard(props: Props): React.Node {
   );
 }
 
-export default ProjectCard;
+export default LinkCard;
