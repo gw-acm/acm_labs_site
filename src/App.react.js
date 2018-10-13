@@ -12,7 +12,7 @@ type Props = {||};
 
 function App(props: Props): React.Node {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Switch>
         <Route exact={true} path="/" component={Index} />
         <Route exact={true} path="/hack-day" component={HackDay} />
