@@ -16,20 +16,20 @@ function HackDay(props: Props): React.Node {
         <br />
         <br />
         <ul>
-          <li>Join our slack</li>
-          <li>Install these things</li>
-          <li>Item3</li>
+          <li>Join our <a href="http://go.gwu.edu/acmlabsslack">slack</a></li>
+          <li>Install these things: <a href="https://atom.io">Atom</a>, <a href="https://www.python.org/">Python</a>, <a href="https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial">React</a></li>
         </ul>
       </div>
       <div>
-        <strong>Today's schedule looks like the following:</strong>
+        <strong>Relevant Links</strong>
         <br />
         <br />
         <ul>
-          <li>Open Source projects you can contribute to</li>
-          <li>Item2</li>
-          <li>Tutorials and Resources</li>
-          <li>Item4</li>
+          <li><a href="https://opensource.com/resources/what-open-source">What is Open Source?</a></li>
+          <li><a href="https://github.com/GSA/code-gov/wiki/Tools-&-Resources">Code.gov Resources</a></li>
+          <li><a href="https://code.gov/#!/open-tasks">Code.gov Help Wanted</a></li>
+          <li><a href="https://github.com/GSA/code-gov-web">Code.gov Site Repo</a></li>
+          <li><a href="https://github.com/nasa/apod-api">NASA Picture of the Day</a></li>
         </ul>
       </div>
       <section className="tiles">
