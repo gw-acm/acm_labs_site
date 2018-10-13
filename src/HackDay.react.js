@@ -12,6 +12,16 @@ function HackDay(props: Props): React.Node {
   return (
     <PageWrapper title="Hack Day" subtitle={subtitle}>
       <div>
+        <strong>Here are some things you can do to get set up:</strong>
+        <br />
+        <br />
+        <ul>
+          <li>Join our slack</li>
+          <li>Install these things</li>
+          <li>Item3</li>
+        </ul>
+      </div>
+      <div>
         <strong>Today's schedule looks like the following:</strong>
         <br />
         <br />
