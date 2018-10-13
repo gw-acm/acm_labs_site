@@ -26,9 +26,10 @@ function HackDay(props: Props): React.Node {
         <br />
         <ul>
           <li><a href="https://opensource.com/resources/what-open-source">What is Open Source?</a></li>
+          <li><a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a></li>
           <li><a href="https://github.com/GSA/code-gov/wiki/Tools-&-Resources">Code.gov Resources</a></li>
           <li><a href="https://code.gov/#!/open-tasks">Code.gov Help Wanted</a></li>
-          <li><a href="https://github.com/GSA/code-gov-web">Code.gov Site Repo</a></li>
+          <li><a href="https://github.com/GSA/code-gov">Code.gov Repo</a></li>
           <li><a href="https://github.com/nasa/apod-api">NASA Picture of the Day</a></li>
         </ul>
       </div>
